@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CATS</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1 id="home"></h1>
+        <nav class="navbar">
+            <div class="nav-title">
+                <p>Project: Cats</p>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <!--<li><a href="#home">Home</a></li>-->
+                    <li><a href="#about-info">About</a></li>
+                    <li><a href="#adoption">Adopt</a></li>
+                    <li><a href="#cat-care">Care</a></li>
+                    <li><a href="#about-cats">Cats</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--button to go back to the top at any time-->
+        <button class="top-button">
+            <a href="#home"><img src="https://i.ibb.co/gvzJQXd/arrow.png" alt="" class="img-button" /></a>
+        </button>
+        <div class="extra-space"></div>
+
+        <!--information-->
+
+        <h2 id="about-info">KITTEN CATS</h2>
+        <div class="container-info">
+            <p class="about-text">
+               <b><strong>CUTE KITTENS :</strong></b>
+            </p>
+            <img src="data:image/jpeg;base64,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" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7J6FqS6ma-oIBdlyH9p7uCWIzF0d2MF7StA&s" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoBDmo2ZmaKMjvshH5F3wXgooovGkCKkRklQ&s" alt="">
+            <img src="data:image/jpeg;base64,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" alt="">
+        </div>
+        <h2 id="adoption">IMPORTANT POINTS</h2>
+        <div class="container-info">
+            <p class="adopt-text">
+                About Kitty Kittens
+            </p>
+            <ul>
+                <li>
+                    All cats are fully vaccinated, dewormed and flea treated.
+                </li>
+                <li>All male cats are neutered.</li>
+                <li>All female cats are sterilized.</li>
+                <li>All cats have undergone a health check before placing.</li>
+                <li>
+                    We will determine which cat best suits you and your situation.
+                </li>
+                <li>
+                    If necessary you will be guided through the care of your new cat.
+                </li>
+                <li>
+                    All cats have been chipped. Should your cat run away and be found,
+                    it can be quickly returned to you by chip registration.
+                </li>
+                <li>
+                    If the cat does not get used to you, the animal can always return to
+                    the foundation.
+                </li>
+            </ul>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUFjXt4WYsmWS1w6oqJy1bHTI-2GWc3dqeRQ&s" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTikSpR56NuiBgIobN70dt7KbB9KZy_Am0UAQ&s" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPYqXwAxy3gxjaWytM1iKVUYsepMafC0RIMA&s" alt="">
+        </div>
+        <h2 id="cat-care">How to care for your cat</h2>
+        <div class="container-info">
+            <p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZJx3vnUumqKIuxHicf2Z9RWailpjAGzYCcA&s" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfJSSNHGlGydSOF5i3dL-1JqtapHpF2i1ESg&s" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLP5s5yH8FLM9Fb3Sap7xLaW-V_OxOJCdUOw&s" alt="">
+            </p>
+            <p>
+                When you come home with your new family member, make sure the litter
+                box is ready with a valerian drop in it. Allow the cat to explore the
+                new environment. Some cats find a covered litter box scary. In this
+                case, leave the cover of the box for a while until the animal gets
+                used to it. On the first day place food near the litter box, so it can
+                be easily found by the cat.
+            </p>
+            <p>
+                Make sure you and the cat have time to get used to each other. Always
+                have a scratching post and/or scratching board available so that your
+                furniture is not destroyed. If necessary, you can use a few drops of
+                valerian to encourage the cat to use the scratching post.
+            </p>
+            <p>
+                If you have other pets, make sure they ate before introducing the new
+                housemate. Provide their own food bowls and if possible a separate
+                litter box during the first period. If you give all animals a valerian
+                drop between the shoulder blades, each animal smells the same and they
+                can handle the situation better. If you have a dog, walk the dog while
+                new cat is exploring the house. When a dog comes home from his walk,
+                the newcomer is already there and has found a safe place.
+            </p>
+            <p>
+                Do not let the animal out until it is used to you and the new
+                environment, this can take up to 4-6 weeks. Go out with the animal the
+                first few times and use a cat leash if necessary.
+            </p>
+            <p>
+                A cat also needs exercise, especially indoor cats tend to become
+                overweight. Provide your cats with various toys, don't forget the most
+                beloved toy – laser pointer! Just be careful and do not shine it into
+                your cat eyes.
+            </p>
+        </div>
+
+        <h2 id="about-cats">Meet the cats</h2>
+        <!--Here goes information about Snoopy-->
+
+        <div class="background">
+            <h3 id="snoopy">Snoopy</h3>
+
+            <div class="for-tables">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Color</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>Snoopy</td>
+                        <td>Female</td>
+                        <td>Ginger</td>
+                        <td>15</td>
+                    </tr>
+                </table>
+            </div>
+            <p>
+                Snoopy was present to Ellen (foster mother for Loes voor Dieren) for
+                her birthday. At that time Snoopy was only 10 weeks old and she
+                quickly became good friends with the other two house cats Baloe and
+                Caddy. Even though Ellen loves Charlies Brown`s dog Snoopy from
+                Peanuts books, the Snoopy cat is actually not named after the dog. As
+                a baby, she was as sweet as candy and constantly received the comment
+                "oh what a candy!"(candy in Dutch is snoepje/snoepie).Now, Snoopy is
+                the oldest cat in the house, she recently has celebrated her 15th
+                birthday. She still is a very sweet cat, that demands alll the
+                attention. Sadly, she really dislikes foster kittens since they also
+                need a lot of care.
+            </p>
+            <div class="images-container">
+                <div class="images-column">
+                    <img src="https://i.ibb.co/p6TTfD2/Snoopy-1.jpg" class="images" alt="" />
+                </div>
+                <div class="images-column">
+                    <img src="https://i.ibb.co/1qWXdKj/snoopy-2.jpg" class="images" alt="" />
+                </div>
+                <div class="images-column">
+                    <img src="https://i.ibb.co/BV9z1zV/snoopy3.jpg" class="images" alt="" />
+                </div>
+            </div>
+        </div>
+        <!--Here goes information about Banjer-->
+
+        <div class="background">
+            <h3 id="banjer">Banjer</h3>
+            <div class="for-tables">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Color</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>Banjer</td>
+                        <td>Male</td>
+                        <td>White with black spots</td>
+                        <td>5</td>
+                    </tr>
+                </table>
+            </div>
+            <p>
+                5.5 years ago Ellen has decided to quit smoking. And that was not an
+                easy task, so she needed a distraction. One day she saw extremely cute
+                pictures of baby Banjer and thought that if she buys him, she is going
+                to be too busy taking care of him to even think about smoking. Did
+                this tactic work? Yes! Soon Banjer will be celebrating his 6th
+                birthday and Ellen 6th anniversary of being smoke-free. Banjer being
+                the oldest male cat in the house became the big brother of all the
+                foster kittens. He may be a huge cat, but he is very soft and gentle
+                with the little ones. His favourite things are licking people`s hands,
+                trying to catch cat candies with his mouth and spending time with his
+                girlfriend Lola.
+            </p>
+            <div class="images-container">
+                <div class="images-column">
+                    <img src="https://i.ibb.co/vHyRFDk/Banjer-1.jpg" class="images" alt="" />
+                </div>
+                <div class="images-column">
+                    <img src="https://i.ibb.co/0cN9kL8/banjer-2.jpg" class="images" alt="" />
+                </div>
+                <div class="images-column">
+                    <img src="https://i.ibb.co/bsfL1xT/banjer-3.jpg" class="images" alt="" />
+                </div>
+            </div>
+        </div>
+
+        <!--Here goes information about Piccolo-->
+
+        <div class="background">
+            <h3 id="piccolo">Piccolo</h3>
+            <div class="for-tables">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Color</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>Piccolo</td>
+                        <td>Female</td>
+                        <td>Grey with dark stripes</td>
+                        <td>5</td>
+                    </tr>
+                </table>
+            </div>
+            <p>
+                In 2015 the family officially started working with Loes voor Dieren
+                and fostering cats. Piccolo was from the first nest of cats. Her story
+                starts really sad, as a baby she was found in the street being
+                comatose. The chances of her surviving were slim. It took long time
+                for her to recover, of course she did survive, but her growth was
+                affected by it. She was named Picollo due to her being extremely
+                small. Even now, being 5 years old, she still looks like a little
+                baby. Picollo needs a lot of care and attention, as she have also
+                suffered brain damage. But that does not make her any worse pet to
+                have! Once she gets used to human, she becomes really cuddly. When she
+                is laying in her spot and sees you coming, she instantly jumps from
+                happiness and waits for her deserved pets.
+            </p>
+            <div class="images-container">
+                <div class="images-column">
+                    <img src="https://i.ibb.co/5jcsJ8P/Picolo-1.jpg" class="images"
+                        alt="" />
+                </div>
+                <div class="images-column">
+                    <img src="https://i.ibb.co/Dr8S6bv/Picolo-2.jpg" class="images"
+                        alt="" />
+                </div>
+                <div class="images-column">
+                    <img src="https://i.ibb.co/ZK1SQ2W/picolo-3.jpg" class="images"
+                        alt="" />
+                </div>
+            </div>
+        </div>
+        <!--Here goes information about Sisco-->
+
+        <div class="background">
+            <h3 id="sisco">Sisco</h3>
+            <div class="for-tables">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Color</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>Sisco</td>
+                        <td>Male</td>
+                        <td>Black stripes with gray-brown</td>
+                        <td>4</td>
+                    </tr>
+                </table>
+            </div>
+            <p>
+                Sisco was found on the street, together with his mother and two other
+                siblings. His brother died shortly after, but sister Lola has
+                survived. He was very, very sick and had an eye infection. For a very
+                long it was unknown if Sisco was even able to see anything. During one
+                of the check ups at the vet it was decided that it is best to remove
+                his eyes, as there were inflammation that could have not been treated.
+                After the surgery, he quickly got used to the surroundings. Taking
+                care of blind cat took a lot of time, as he had to be trained to
+                follow various instructions. Sisco`s story may sound sad, but now he
+                is a very happy and very active cat. He knows everything in the house,
+                he can still bravely climbs on tall scratching posts, takes care of
+                little kittens and plays with his sister Lola.
+            </p>
+            <div class="images-container">
+                <div class="images-column">
+                    <img src="https://i.ibb.co/0QVr39c/sisco-1.jpg" class="images"
+                        alt="" />
+                </div>
+                <div class="images-column">
+                    <img src="https://i.ibb.co/xDNtqmr/Sisco-2.jpg" class="images" alt="" />
+                </div>
+                <div class="images-column">
+                    <img src="https://i.ibb.co/X7Mhf4D/sisco-3.jpg" class="images" alt="" />
+                </div>
+            </div>
+        </div>
+        <!--Here goes information about Lola-->
+
+        <div class="background">
+            <h3 id="lola">Lola</h3>
+            <div class="for-tables">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Color</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>Lola</td>
+                        <td>Female</td>
+                        <td>Turtle, random patches of black,brown</td>
+                        <td>4</td>
+                    </tr>
+                </table>
+            </div>
+            <p>
+                Lola is the sister of Sisco. Luckily for her, she was not as sick and
+                the eye infection affected only one eye. You might have read a lot
+                that animals don`t have a sense of family, but the case of these two
+                sibling cats could prove it wrong. If Sisco is in distress, Lola is
+                the first one to run to him, she always takes care of him and if
+                needed does everything to calm him down. Every evening they play
+                together. They share a very deep bond and they could never be
+                separated. Lola, being typical female, is very jealous! Even towards
+                the little kittens. Over time her jealousy does calm down and she
+                starts developing motherly feelings towards little kittens. Lola is
+                also very close with her boyfriend Banjer. They are the cutest couple
+                in the house, every time they sleep together, you see the little paws
+                of Banjer hugging Lola.
+            </p>
+            <div class="images-container">
+                <div class="images-column">
+                    <img src="https://i.ibb.co/cXN4sBg/lola-1.jpg" class="images" alt="" />
+                </div>
+                <div class="images-column">
+                    <img src="https://i.ibb.co/J76rXn0/lola-2.jpg" class="images"
+                        alt="" />
+                </div>
+                <div class="images-column">
+                    <img src="https://i.ibb.co/vD9yjrY/lola-3.jpg" class="images"
+                        alt="" />
+                </div>
+            </div>
+        </div>
+        <!--Here goes information about Donut-->
+
+        <div class="background">
+            <h3 id="donut">Donut</h3>
+            <div class="for-tables">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Color</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>Donut</td>
+                        <td>Male</td>
+                        <td>White with brown spots</td>
+                        <td>3</td>
+                    </tr>
+                </table>
+            </div>
+            <p>
+                Donut comes from a family of five kittens. Three of five kittens,
+                including Donut were really sick. They used to get special drops into
+                their eyes a few times a day. This made Donut dislike being petted on
+                his head. He can be a very sweet cat, but not many people want a cat
+                that does not want to be petted. Of course over time (very long time)
+                he forms a trust with humans and does not mind being petted but he
+                still prefers to be by himself. Now Donut looks like a traditional
+                Dutch donut, better known as oliebollen. As we have so many cats in
+                the house, placing him on needed diet is not really possible. We are
+                hoping that one day he will find a loving family, who can give him all
+                the love he truly deserves.
+            </p>
+            <div class="images-container">
+                <div class="images-column">
+                    <img src="https://i.ibb.co/1LDf0F3/donut-1.jpg" class="images"
+                        alt="" />
+                </div>
+                <div class="images-column">
+                    <img src="https://i.ibb.co/CBXL5cz/donut-2.jpg" class="images" alt="" />
+                </div>
+                <div class="images-column">
+                    <img src="https://i.ibb.co/0DTXyTy/donut-3.jpg" class="images"
+                        alt="" />
+                </div>
+            </div>
+        </div>
+        <!--Here goes information about Buttler-->
+
+        <div class="background">
+            <h3 id="butler">Butler</h3>
+            <div class="for-tables">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Color</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>Butler</td>
+                        <td>Male</td>
+                        <td>Black with few white spots</td>
+                        <td>2</td>
+                    </tr>
+                </table>
+            </div>
+            <p>
+                Butler was found when he was only one week old and all alone. At his
+                back paw he is missing a toe. This might suggest that he was taken
+                away from a cat nest by another animal. He was bottle fed. He was the
+                first kitten that Vaida (creator of this web page) has bottle fed!
+                Butler was always been very sweet and friendly cat. Every time he saw
+                humans, he started to purr and ask for attention. Eventually, Butler
+                was adopted by Vaida and now he is one of the most spoiled cats in the
+                house (or maybe even the world). He loves to knead blankets and
+                bathrobes, steal and hide various candies and watch birds on the TV.
+            </p>
+            <div class="images-container">
+                <div class="images-column">
+                    <img src="https://i.ibb.co/K0BvdpR/butler-1.jpg" class="images"
+                        alt="" />
+                </div>
+                <div class="images-column">
+                    <img src="https://i.ibb.co/xfwh27s/butler-2.jpg" class="images"
+                        alt="" />
+                </div>
+                <div class="images-column">
+                    <img src="https://i.ibb.co/2PdY1ff/butler-3.jpg" class="images"
+                        alt="" />
+                </div>
+            </div>
+        </div>
+        <!--Here goes information about Abbey-->
+
+        <div class="background">
+            <h3 id="abbey">Abbey</h3>
+            <div class="for-tables">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Color</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>Abbey</td>
+                        <td>Female</td>
+                        <td>Black with some white spots</td>
+                        <td>2</td>
+                    </tr>
+                </table>
+            </div>
+            <p>
+                Abbey was found in a big family of cats with no people around. She was
+                very malnourished, scared of people. Even though Abbey now for 2 years
+                lives in our house, she is still afraid of people. Some cats if found
+                too late already are feral and cannot form a bond with humans.
+                Sometimes you can pet her and she does enjoy it! But being too afraid
+                quickly runs away. We would love to find her a loving new home, but
+                she is still not ready to be placed. Every time we get a new litter of
+                small kittens, she by observing them is learning more and more about
+                people. That gives us hope that one day she could learn how to trust
+                humans.
+            </p>
+            <div class="images-container">
+                <div class="images-column">
+                    <img src="https://i.ibb.co/hmZw2sg/Abbey-1.jpg" class="images" alt="" />
+                </div>
+                <div class="images-column">
+                    <img src="https://i.ibb.co/0sLgQPr/abbey-3.jpg" class="images"
+                        alt="" />
+                </div>
+                <div class="images-column">
+                    <img src="https://i.ibb.co/r2yyQws/abbey-2.jpg" class="images"
+                        alt="" />
+                </div>
+            </div>
+        </div>
+        <!--Here goes information about Freekje-->
+
+        <div class="background">
+            <h3 id="freekje">Freekje</h3>
+            <div class="for-tables">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Color</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>Freekje</td>
+                        <td>Male</td>
+                        <td>Black with white spots</td>
+                        <td>8 months</td>
+                    </tr>
+                </table>
+            </div>
+            <p>
+                Freekje is named in honor of Ellen's life partner Freek. Freekje was
+                found on Frederik van Eeden street just three days before Freek's
+                death. He was found with two sisters, soaking wet in the rain. At that
+                time they were only one day old! On their bellies the umbilical cord
+                was still attached, letting us know that someone threw them away right
+                after birth. All 3 kittens were bottle fed and were growing up really
+                quickly! The two sisters after sterilisation were adopted and went to
+                live in their new homes. And Freekje, due to sentimental values is
+                staying with us. He is a very playful and happy kitten. Currently, he
+                is taking very good care of our five little kittens! He is teaching
+                them how to play, he is washing them (as they are still too little to
+                do it by themselves) and protecting them from other cats.
+            </p>
+            <div class="images-container">
+                <div class="images-column">
+                    <img src="https://i.ibb.co/09xxVY1/freekje-1.jpg" class="images"
+                        alt="" />
+                </div>
+                <div class="images-column">
+                    <img src="https://i.ibb.co/MBVncwQ/freekje-2.jpg" class="images" alt="" />
+                </div>
+                <div class="images-column">
+                    <img src="https://i.ibb.co/0GkGVCY/Freekje-3.jpg" class="images"
+                        alt="" />
+                </div>
+            </div>
+        </div>
+        <ul class="back-top">
+            <li><a href="#home">Back to the top</a></li>
+        </ul>
+    </main>
+    <footer class="footer">
+    </footer>
+</body>
+
+</html>

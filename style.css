@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap");
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Color variables*/
+:root {
+  --main-color: #203130;
+  --par-color: #283d3b;
+  --background-color: #2998a0;
+  --secondary-background-cl: #fff;
+  --heading-footer: #290f52;
+  --for-visited-links: #4d2318;
+  --hover-color: #575d75;
+}
+html {
+  background: rgb(24, 178, 199);
+  /*changing default font size for easy calculations of rem units*/
+  font-size: 10px;
+}
+body {
+  font-family: "Hind", sans-serif;
+  scroll-behavior: smooth;
+}
+/*navigation bar and link styles*/
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--heading-footer);
+  color: white;
+  font-size: 2.5rem;
+  z-index: 200;
+}
+
+.nav-title p {
+  font-size: 2.8rem;
+  color: white;
+  font-weight: bolder;
+  margin: auto;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.navigation li {
+  list-style: none;
+}
+.navigation li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 2.4rem;
+}
+
+.navigation ul li:hover {
+  height: 7rem;
+  background-color: var(--hover-color);
+}
+
+a:visited {
+  color: var(--for-visited-links);
+}
+a:link {
+  color: #334644;
+}
+/*making sure that nav bar won`t cover next element*/
+.extra-space {
+  padding: 4rem;
+}
+
+/*back to top button*/
+.img-button {
+  width: 7rem;
+}
+.top-button {
+  position: fixed;
+  bottom: 5rem;
+  left: 95%;
+  background: transparent;
+  border: transparent;
+}
+
+/*styling for all the texts*/
+h2,
+h3 {
+  text-align: center;
+  font-size: 4.4rem;
+  font-weight: bolder;
+  color: var(--main-color);
+  letter-spacing: 0.4rem;
+  /*making sure that nav bar won`t cover anchors*/
+  padding-top: 12rem;
+  margin-top: -12rem;
+  padding-bottom: 25px;
+}
+
+h3 {
+  font-size: 5.4rem;
+  font-style: italic;
+}
+p {
+  color: var(--par-color);
+  font-size: 2rem;
+  text-align: justify;
+  margin-bottom: 1rem;
+  line-height: 3.2rem;
+}
+/*
+.about-text {
+	for adding extra styles later
+}*/
+.adopt-text {
+  text-align: center;
+  font-weight: bold;
+}
+.container-info ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+  font-size: 2rem;
+  line-height: 4rem;
+  padding: 0 5rem;
+}
+
+/*styles for containers*/
+.container-info,
+.background {
+  margin: 0 auto;
+  width: 70%;
+  background-color: var(--secondary-background-cl, white);
+  text-align: justify;
+  box-shadow: 15px 15px 40px var(--main-color);
+  padding: 3rem;
+  margin-bottom: 3rem;
+}
+
+/*styles for images */
+.images {
+  width: 100%;
+  height: auto;
+}
+
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+}
+
+.images-column {
+  flex-basis: 30%;
+}
+
+.images:hover {
+  transform: scale(1.3);
+  transition: ease-in-out;
+  transition: 1.3s;
+  box-shadow: 15px 15px 40px var(--main-color);
+}
+
+/*styling tables*/
+table {
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  width: 100%;
+  height: 10rem;
+}
+table,
+th,
+td {
+  border: 3px solid var(--main-color);
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/*styles for bottom of the page*/
+.back-top {
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.back-top a {
+  font-size: 3rem;
+  list-style-type: none;
+  color: var(--main-color);
+}
+.footer {
+  height: 7rem;
+  width: 100%;
+  background: var(--heading-footer);
+  color: white;
+}
+.footer p {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  padding-top: 2rem;
+}
+
+/*media queries. All resolutions are taken from https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488
+In the future CSS with JS should be used to create a hamburger type menu for phones and tablets*/
+
+/*smartphone in portrait*/
+@media (min-width: 320px) and (max-width: 480px) {
+  /*making sure that rem property would work*/
+  html {
+    font-size: 5px;
+  }
+
+  h2,
+  h3 {
+    font-weight: bold;
+  }
+
+  .container-info {
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 4rem;
+  }
+  .background {
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 4rem;
+  }
+
+  .img-button {
+    display: none;
+  }
+
+  .images-container {
+    display: block;
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    overflow-y: hidden;
+  }
+  .images-column {
+    display: inline-block;
+  }
+  .images {
+    padding: 1rem;
+  }
+
+  .for-tables {
+    display: none;
+  }
+}
+/*low res tablets, phones in landscape mode*/
+@media (min-width: 481px) and (max-width: 767px) {
+  html {
+    font-size: 7px;
+  }
+  h2,
+  h3 {
+    font-weight: bold;
+  }
+
+  .container-info,
+  .background {
+    margin: 0 auto;
+    width: 85%;
+    box-shadow: 5px 5px 13px;
+    margin-bottom: 3rem;
+  }
+
+  .img-button {
+    display: none;
+  }
+  .images-container {
+    display: block;
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    overflow-y: hidden;
+  }
+  .images-column {
+    display: inline-block;
+  }
+  .images {
+    padding: 1rem;
+  }
+  .for-tables {
+    display: none;
+  }
+}
+
+/*tablets*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 8px;
+  }
+  .container-info,
+  .background {
+    margin: 0 auto;
+    width: 80%;
+    box-shadow: 5px 5px 13px;
+    margin-bottom: 4rem;
+  }
+
+  .img-button {
+    display: none;
+  }
+
+  .images-container {
+    display: block;
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    overflow-y: hidden;
+  }
+  .images-column {
+    display: inline-block;
+  }
+  .images {
+    padding: 1rem;
+  }
+
+  /*tablets landspace*/
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    html {
+      font-size: 10px;
+    }
+
+    .container-info,
+    .background {
+      margin: 0 auto;
+      width: 80%;
+      box-shadow: 5px 5px 13px;
+      margin-bottom: 4rem;
+    }
+
+    .img-button {
+      display: none;
+    }
+
+    .images-container {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
